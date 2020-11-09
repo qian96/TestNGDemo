@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG">
+    <test verbose="2" name="TestGroups">
+        <groups>
+            <run>
+               <!-- <include name="group3"></include>-->
+                <exclude name="group1"></exclude>
+            </run>
+        </groups>
+        <packages>
+            <package name="examples.packageA"/>
+            <package name="examples.packageB"/>
+        </packages>
+    </test>
+</suite>

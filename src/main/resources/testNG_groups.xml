@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test">
+    <test name="TestGroups" verbose="2">
+        <groups>
+           <!-- <define name="all">
+                <include name="group2"></include>
+                <include name="group3"></include>
+            </define>-->
+            <run>
+                <include name="group3"></include>
+                <exclude name="group2"></exclude>
+            </run>
+        </groups>
+        <classes>
+         <class name="examples.packageA.ClassTestA"></class>
+        </classes>
+    </test>
+</suite>
